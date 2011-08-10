@@ -1,4 +1,4 @@
-if defined?(Spec)
+if defined?(Spec) && defined?(Spec::DSL)
   module Spec::DSL::Main
     alias_method :Feature, :describe
     def narrative(description)
